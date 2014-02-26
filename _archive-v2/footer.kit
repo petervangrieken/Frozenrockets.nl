@@ -1,0 +1,23 @@
+
+		<script src="./assets/js/fastclick.min.js"></script>
+		<script>
+			FastClick.attach(document.body);
+
+			nodes = document.querySelectorAll('img[data-src]');
+			nl = nodes.length;
+			
+			for (var i = 0; i < nl; i++) {
+				if (nodes[i].getAttribute('data-src') != '') {
+
+					ratio = typeof window.devicePixelRatio != "undefined" ? window.devicePixelRatio : 1;
+					width= nodes[i].offsetWidth*(ratio*0.75).toFixed();
+
+					nodes[i].setAttribute( 'src', 'i/'+width+'/'+nodes[i].getAttribute('data-src') );
+					nodes[i].setAttribute( 'width', width+'px');
+					nodes[i].setAttribute( 'height', 'auto');
+
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Werken voor Nederland voor iedereen toegankelijk &mdash; Frozen Rockets</title>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599872/689164/css/fonts.css" />
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<!--[if lt IE 9]>
+		<script src="./js/respond.js"></script>
+	<![endif]-->
+
+</head>
+<body class="werkenvoornederland">
+
+	<a href="#mainnav" class="link-to-mainnav">&#x2261; <span class="visuallyhidden">Go to navigation</span></a>
+
+	
+	<div class="screen screen--single-project">
+
+		<header class="maintitle">
+			<img class="logo" src="./images/fr-logo-black.svg" alt="Frozen Rockets">
+		</header>
+
+		<!-- header class="single-project-mainheader">
+			<h1 class="huge">Werken voor Nederland voor iedereen toegankelijk</h1>
+		</h1-->
+
+	</div>
+	<div class="maincontent container--centered">
+			<h1>Werken voor Nederland voor iedereen toegankelijk</h1>
+
+			<div class="component component--secondary component--quote mainquote">
+				<div class="component__content">
+					<blockquote>
+						The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.
+					</blockquote>
+					<span class="quote-source">Sir Tim Berners-Lee</span>
+				</div>
+			</div>
+			<p>
+				Namens Rhinofly heb ik de frontend verzorgd voor
+				Werken voor Nederland, het wervingsplatform van de
+				Rijksoverheid.
+			</p>
+			<p>
+				Begin 2012 gaf minister Spies van Binnenlandse Zaken en Koninkrijksrelaties aan dat alle websites van de Rijksoverheid eind 2012 zouden moeten voldoen aan versie 1 van de Webrichtlijnen. Rhinofly ontwikkelt en beheert al een aantal jaar de carri&egrave;rewebsites van de overheid, dus ook deze sites moesten aan de 125 richtlijnen voldoen.
+			</p>
+			<p>
+				Ik was verantwoordelijk voor de implementatie van het nieuwe ontwerp van <a href="http://werkenvoornederland.nl">werkenvoornederland.nl</a>
+				en het voldoen aan de webrichtlijnen hiervan.
+			</p>
+
+			<h2 class="pagetitle">Modulair</h2>
+			<p>
+				De site is modulair opgezet, wat betekent dat de onderdelen
+				zoveel mogelijk kunnen worden hergebruikt. Een vacaturekaartje komt bijvoorbeeld zowel op de homepage als in het vacatureoverzicht terug.
+			</p>
+			<figure class="project-image">
+				<img src="./images/projects/wvnl/vacaturekaartje.png" alt="Een vacaturekaartje zoals die op WerkenvoorNederland.nl staat">
+				<figcaption>Een vacaturekaartje op WerkenvoorNederland.nl</figcaption>
+			</figure>
+
+			<p>
+				Deze herbruikbare opzet heeft gezorgd voor een kleinere CSS en dus in een site die sneller rendert.
+			</p>
+
+			<h2 class="pagetitle"><i>Future friendly</i></h2>
+			<p>
+				Om de site zo toegankelijk mogelijk te maken en tegelijk zo goed mogelijk voor te bereiden op toekomstige ontwikkelingen, is zoveel mogelijk gebruik gemaakt van de mogelijkheden die CSS biedt voor bijvoorbeeld animaties. Javascript is alleen gebruikt als <i>enhancement</i>.
+			</p>
+			<p>
+				Ook is CSS gebruikt voor de grafische elementen op de site. Het gebruik van afbeeldingen is zoveel mogelijk beperkt, wat niet alleen zorgt voor een 
+				kleinere (en snellere) site, maar ook voor een site die beter geschikt is voor
+				hoge resolutie (Retina) schermen.
+			</p>
+
+
+			<div class="component component--primary">
+					<div class="component__content">
+						<h2>Meer informatie</h2>
+						<ul>
+							<li>
+								<a href="http://frank-ly.nl/werkenbijdeoverheid-nl-en-werkenvoornederland-nl-voldoen-volledig-aan-de-webrichtlijnen">Lees ook over dit project op Frank-ly</a>, het blog van Rhinofly.
+							</li>
+						</ul>
+					</div>
+			</div>
+
+	</div>
+
+		<nav id="mainnav" class="mainnav">
+		<ol>
+			<li class="mainnav__item"><a href="./index">Home</a></li>
+			<li class="mainnav__item"><a href="./projecten">Projecten</a></li>
+			<!--li class="mainnav__item"><a href="./article.html">Artikelen</a></li-->
+			<li class="mainnav__item"><a href="./over-frozen-rockets">Over Frozen Rockets</a></li>
+			<li class="mainnav__item"><a href="./contact">Contact</a></li>
+		</ol>
+	</nav>
+	
+		<script>
+			//FastClick.attach(document.body);
+
+			nodes = document.querySelectorAll('img[data-src]');
+			nl = nodes.length;
+			
+			for (var i = 0; i < nl; i++) {
+				if (nodes[i].getAttribute('data-src') != '') {
+
+					ratio = typeof window.devicePixelRatio != "undefined" ? window.devicePixelRatio : 1;
+					width= nodes[i].offsetWidth*(ratio*0.75).toFixed();
+
+					nodes[i].setAttribute( 'src', 'i/'+width+'/'+nodes[i].getAttribute('data-src') );
+					nodes[i].setAttribute( 'width', width+'px');
+					nodes[i].setAttribute( 'height', 'auto');
+
+				}
+			}
+		</script>	
+	<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://frozenrockets.nl/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://frozenrockets.nl/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code --></body>
+</html>

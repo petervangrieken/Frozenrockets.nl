@@ -1,0 +1,46 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html {
+	font-size: $font-size-base;
+}
+
+body {
+	font-family: $font-family-base;
+	font-weight: $font-weight-base;
+	margin: 0;
+	padding: 0;
+
+	background-color: $color-page-background;
+	color: $color-text-base;
+}
+
+
+// Forms
+
+label {
+	display: block;
+}
+
+
+a {
+	color: $color-text-pink-dark;
+}
+
+
+h1, h2, h3, h4 {
+	font-family: $font-family-primary;
+	font-weight: $font-weight-primary;
+	//color: $color-text-pink-light;
+}
+
+h1 {
+	margin-top: 0;
+	//border-bottom: 5px solid $color-text-pink-light;
+}
+
+h2,h3,h4 {
+
+	margin: 0;
+}

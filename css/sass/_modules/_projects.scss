@@ -1,0 +1,139 @@
+
+.projects {
+	list-style: none;
+	margin: 0 0 10em 0;
+	padding: 0;
+}
+
+	.projects__client {
+		position: relative;
+		min-height: 10em;
+		margin-bottom: 4em;
+
+		.project-holder {
+			display: block;
+			padding: .5em;
+			text-decoration: none;
+		}
+
+		.project-link {
+			color: $color-text-base;
+		}
+
+		.project-link:hover, .project-link:active {
+			background-color: rgba($color-text-blue-light,.2);
+			color: $color-text-base;
+		}
+
+		.client__logo {
+			float: right;
+			height: 5em;
+			width: 5em;
+			padding: 1em;
+			margin: 0 0 1em 1em;
+			
+			background-color: $color-white;
+			border: 1px solid $color-text-blue-light;
+
+
+
+			@media only screen and (min-width: 36em) {
+				position: absolute;
+				left: -9em;
+				height: 8em;
+				width: 6em;
+				float: none;
+
+				border: none;
+				padding: 0;
+				margin: 0;
+			}
+		}
+
+		.client__logo__image {
+			width: 100%;
+		}
+
+		.client__name {
+			color: $color-text-green;
+			font-weight: $font-weight-primary;
+			margin-top: 0;
+		}
+	}
+
+.projects-logo-only {
+	list-style: none;
+	//margin: 0;
+	margin: 0 0 5.2rem 0;
+	padding: 0;
+	text-align: justify;
+	text-align-last: justify; 
+
+	a {
+		text-decoration: none;
+	}
+}
+	.project-logo {
+		text-align: left;
+		display: inline-block;
+		width: 23%;
+		//margin-right: 1%;
+		margin-bottom: 2.6rem;
+		vertical-align: top;
+
+		.client__name {
+			font-size:$font-size-small;
+			line-height: $line-height-small;
+			color: $color-text-green;
+			font-weight: $font-weight-primary;
+			text-align: left;
+			text-align-last: left;
+			
+		}
+
+		.client__logo__image {
+			display: block;
+			width: 80%;
+		}
+	}
+
+	//.project-logo--small {
+	//	width: 12%;
+	//}
+
+.projects-logo-only--small {
+	@extend .projects-logo-only;
+	
+	.client__name {
+		display: none;
+		font-size: $font-size-small;
+		line-height: $line-height-small;
+		font-weight: $font-weight-base;
+		text-align: left;
+		text-align-last: left;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.single-project-mainheader {
+	position: absolute;
+	top: 35%;
+	width: 90%;
+	padding: 5%;
+	text-align: center;
+	color: $color-white;
+	text-shadow: 0 0 4px rgba(0,0,0,.4);
+
+	.werkenvoornederland & {
+		top: 20%;
+	}
+
+	h1 {
+		color: $color-white;
+		margin-bottom: .2em;
+	//	text-shadow: 0 0 4px rgba(0,0,0,.4);
+	}
+}

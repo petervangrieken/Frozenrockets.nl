@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Eredivisie Live Sidekick &mdash; Frozen Rockets</title>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599872/689164/css/fonts.css" />
+	<link rel="stylesheet" href="./css/style.css">
+	
+	<!--[if lt IE 9]>
+		<script src="./js/respond.js"></script>
+	<![endif]-->
+
+</head>
+<body class="sidekick">
+	<a href="#mainnav" class="link-to-mainnav">&#x2261; <span class="visuallyhidden">Go to navigation</span></a>
+
+	
+	<div class="screen screen--single-project">
+
+		<header class="maintitle">
+			<img class="logo" src="./images/fr-logo-black.svg" alt="Frozen Rockets">
+		</header>
+
+		<!-- header class="single-project-mainheader">
+			<h1 class="huge">Eredivisie Live Sidekick</h1>
+		</h1-->
+
+	</div>
+	<div class="maincontent container--centered">
+
+			<h1>Eredivisie Live Sidekick</h1>
+
+			<div class="component component--secondary component--quote mainquote">
+				<div class="component__content">
+					<blockquote>
+						Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.
+					</blockquote>
+					<span class="quote-source">Pel&eacute;</span>
+				</div>
+			</div>
+
+			<p>
+				In navolging van de verschillende <i>Second Screens</i>
+				van de NOS, kwam ook Eredivisie Live met een speciale
+				<i>webapp</i> om live de voetbalwedstrijden te volgen.
+			</p>
+			<p>
+				De app heeft het tweede scherm naar een volgend niveau
+				getild door de toevoeging van verschillende interactieve
+				elementen. Zo is het mogelijk om te stemmen op de 
+				<i>Man of the Match</i> en mee te doen met polls die
+				tijdens de wedstrijd in de tijdlijn verschijnen.
+			</p>
+			<p>
+				Daarnaast zijn uitgebreide statistieken te zien in de app, zoals heatmaps van waar een speler zich op het veld bevindt, corners en vrije trappen en de geschiedenis van spelers.
+			</p>
+			<p>
+				Het resultaat is onderscheiden met verschillende awards, waaronder de 
+				prestigieuze <i>golden EPFL Best Practice Award for Media and Marketing</i>. De EPFL awards zijn een de jaarlijkse prijzen die worden uitgerijkt door de Association of European Professional Football Leagues.
+			</p>
+
+
+
+			<div class="component component--primary">
+					<div class="component__content">
+						<h2>Meer informatie</h2>
+						<ul>
+							<li>
+								<a href="http://www.infostradasports.com/news/second-screen-developed-by-infostrada-sports-group-wins-prestigious-epfl-award/">Lees ook over dit project op de website van Infostrada Sports</a>
+							</li>
+							<li>
+								<a href="http://www.epfl-europeanleagues.com/EPFL_awards_2012.htm">Het nieuwsbericht van de EPFL Awards 2012</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+	</div>
+		<nav id="mainnav" class="mainnav">
+		<ol>
+			<li class="mainnav__item"><a href="./index">Home</a></li>
+			<li class="mainnav__item"><a href="./projecten">Projecten</a></li>
+			<!--li class="mainnav__item"><a href="./article.html">Artikelen</a></li-->
+			<li class="mainnav__item"><a href="./over-frozen-rockets">Over Frozen Rockets</a></li>
+			<li class="mainnav__item"><a href="./contact">Contact</a></li>
+		</ol>
+	</nav>
+	
+		<script>
+			//FastClick.attach(document.body);
+
+			nodes = document.querySelectorAll('img[data-src]');
+			nl = nodes.length;
+			
+			for (var i = 0; i < nl; i++) {
+				if (nodes[i].getAttribute('data-src') != '') {
+
+					ratio = typeof window.devicePixelRatio != "undefined" ? window.devicePixelRatio : 1;
+					width= nodes[i].offsetWidth*(ratio*0.75).toFixed();
+
+					nodes[i].setAttribute( 'src', 'i/'+width+'/'+nodes[i].getAttribute('data-src') );
+					nodes[i].setAttribute( 'width', width+'px');
+					nodes[i].setAttribute( 'height', 'auto');
+
+				}
+			}
+		</script>	
+	<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://frozenrockets.nl/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="http://frozenrockets.nl/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code --></body>
+</html>

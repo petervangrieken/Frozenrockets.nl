@@ -1,0 +1,105 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+ }
+
+
+html {
+	height: 100%;
+	font-size: 100%;
+	background-color: $color-page-background;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: $font-family-base;
+	font-weight: $font-weight-base;
+	line-height: $line-height-base;
+	margin: 0;
+	padding: 0;
+
+	color: $color-text-base;
+
+	text-rendering: optimizeLegibility;
+	//background-image: linear-gradient(rgba(0,0,0,.3), transparent 2px);
+	//background-origin: content-box;
+	//background-position: 1em 0em;
+	//background-size: 100% 2.6rem;
+}
+
+a {
+	color: $color-text-pink-dark;
+
+	&:hover, &:active {
+		color: $color-text-pink-light;
+	}
+
+	&:visited {
+		color: $color-text-base;
+	}
+}
+
+h1, h2, h3, h4 {
+	a {
+		text-decoration: none;
+	}
+}
+
+
+p { margin: 0 0 1.625rem; }
+
+h1, h2, h3, h4 {
+	margin: 0 0 1.625em;
+	font-weight: inherit;
+	line-height: 1.2;
+	font-weight: $font-weight-primary;
+	color: $color-text-pink-dark;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 1.602rem;
+}
+
+h2 { 
+	font-size: 1.424rem;
+}
+
+h3 { 
+	font-size: 1.266rem; 
+}
+
+h4 { 
+	font-size: 1.125rem; 
+}
+
+small, .font_small {
+	font-size: 0.889rem;
+}
+
+.huge {
+	font-size: $font-size-huge;
+	font-weight: $font-weight-secondary;
+}
+
+
+blockquote {
+	font-family: $font-family-base;
+	font-weight: $font-weight-base;
+	font-style: italic;
+	//letter-spacing: .05em;
+	text-align: center;
+	padding: 1em 0;
+	margin: 0;
+	white-space: nowrap;
+}
+
+figure {
+	margin: 0;
+
+	img {
+		max-width: 100%;
+	}
+}

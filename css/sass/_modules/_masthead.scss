@@ -1,0 +1,20 @@
+.maintitle {
+	z-index: 9;
+	position: relative;
+
+	.logo {
+		width: 100%;
+	}
+}
+
+.maintitle__subtitle {
+	display: block;
+	font-size: 100%;
+	color: rgba($color-white,.8);
+}
+
+	.maintitle__subtitle--inverted {
+		color: $color-black;
+	}
+
+

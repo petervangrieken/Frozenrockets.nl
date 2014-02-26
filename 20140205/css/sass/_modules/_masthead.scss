@@ -1,0 +1,15 @@
+.maintitle__subtitle {
+	display: block;
+	font-size: 80%;
+	margin-left:2%;
+	margin-top: 1em;
+	color: $color-white;
+
+	@media only screen and (min-width: 36em) {
+		display: inline-block;
+		margin-left: 3em;
+		margin-top: 0;
+	}
+}
+
+

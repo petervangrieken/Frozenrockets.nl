@@ -1,0 +1,1 @@
+window.addEventListener("devicelight",function(e){var t=e.value;t<50&&(document.body.className="dim");t>=50&&t<=1e3&&(document.body.className="normal");t>1e3&&(document.body.className="bright")});

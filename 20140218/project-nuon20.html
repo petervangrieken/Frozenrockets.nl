@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<title>Een nieuwe website voor Nuon &mdash; Frozen Rockets</title>
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+   
+	<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7599872/689164/css/fonts.css" />
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!--script src="./js/frozenrockets.js"></script-->
+
+</head>
+<body class="nuon20">
+	<a href="#mainnav" class="hamburger">&#x2261; <span class="visuallyhidden">Go to navigation</span></a>
+
+	
+	<div class="screen screen--single-project">
+
+		<header class="maintitle">
+			<img class="logo" src="./images/fr-logo-black.svg" alt="Frozen Rockets">
+		</header>
+
+		<!-- header class="single-project-mainheader">
+			<h1 class="huge">Een nieuwe website voor Nuon</h1>
+		</h1-->
+
+	</div>
+	<div class="maincontent container--centered">
+
+			<h1>Een nieuwe website voor Nuon</h1>
+
+			<div class="component component--secondary component--quote mainquote">
+				
+				<div class="component__content">
+					<blockquote>
+						Good designers redesign, <wbr>great designers realign.
+					</blockquote>
+					<span class="quote-source">Cameron Moll</span>
+				</div>
+			</div>
+
+			<p>
+				In 2013 heb ik voor Nuon de frontend voor het vernieuwde Nuon.nl verzorgd. Naast een nieuw CMS, een vernieuwde backend voor verschillende tools en een grote contentmigratie was er een grote update van de frontend nodig. Het design was verouderd en ook de CSS kon door een aantal jaren legacy een opfrisbeurt gebruiken.
+			</p>
+
+
+			<p>
+				Op basis van de markup die al grotendeels bepaald was is een nieuwe ontwerp ge&iuml;mplementeerd. Hierbij was een van de uitgangspunten dat het ontwerp zo dicht mogelijk bij het oude onwerp moest blijven. Het nieuwe ontwerp moest voornamelijk zorgen voor een frisser uiterlijk en meer consistentie.
+			</p>
+
+			<figure class="project-image pull-left">
+				<img src="./images/projects/nuon/homepage-cropped.png" alt="Een screenshot van de oude homepage">
+				<figcaption>De oude homepage van Nuon</figcaption>
+			</figure>
+
+			<p>
+				In het oude ontwerp werd veel gebruik gemaakt van afgeronde hoeken en
+				schaduwen. Deze zijn voor een groot deel weggelaten in het nieuwe onwerp, waardoor de site niet alleen moderner aanvoelt, maar ook 
+				aanzienlijk sneller geworden is.
+			</p>
+
+			<h2>Beter voorbereid op de toekomst</h2>
+
+			<p>
+				De CSS is volledig opnieuw geschreven, gebaseerd op OOCSS 
+			</p>
+			
+
+	</div>
+
+
+		<nav id="mainnav" class="mainnav">
+		<ol>
+			<li class="mainnav__item"><a href="./index">Home</a></li>
+			<li class="mainnav__item"><a href="./projecten">Projecten</a></li>
+			<!--li class="mainnav__item"><a href="./article.html">Artikelen</a></li-->
+			<li class="mainnav__item"><a href="./over-frozen-rockets">Over Frozen Rockets</a></li>
+			<li class="mainnav__item"><a href="./contact">Contact</a></li>
+		</ol>
+	</nav>
+
+	<script>
+		nodes = document.querySelectorAll('img[data-src]');
+		nl = nodes.length;
+		
+		for (var i = 0; i < nl; i++) {
+			if (nodes[i].getAttribute('data-src') != '') {
+
+				ratio = typeof window.devicePixelRatio != "undefined" ? window.devicePixelRatio : 1;
+				width= nodes[i].offsetWidth*(ratio*0.75).toFixed();
+
+				nodes[i].setAttribute( 'src', 'i/'+width+'/'+nodes[i].getAttribute('data-src') );
+				nodes[i].setAttribute( 'width', width+'px');
+				nodes[i].setAttribute( 'height', 'auto');
+
+			}
+		}
+	</script>
+</body>
+</html>
